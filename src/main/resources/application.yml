@@ -1,0 +1,16 @@
+server:
+  port: 8099
+  servlet:
+    context-path: /
+
+mybatis:
+  mapper-locations: classpath*:com/wzb/moredb/**/mapper/*.xml
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    druid:
+      master-data-source:
+        url: jdbc:mysql://127.0.0.1:3306/zuoye?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: root
